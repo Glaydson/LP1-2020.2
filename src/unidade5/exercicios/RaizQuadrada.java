@@ -13,6 +13,8 @@ public class RaizQuadrada {
 		double raiz = calculaRaizQuadrada(numero);
 		System.out.printf("A raiz quadrada de %d é %.2f%n", numero, raiz);
 		System.out.printf("A raiz quadrada de %d é %.2f%n", numero, calculaRaizQuadrada(numero));
+		
+		
 
 	}
 
