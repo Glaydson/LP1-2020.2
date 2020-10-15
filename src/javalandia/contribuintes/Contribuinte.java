@@ -83,4 +83,12 @@ public class Contribuinte {
 		this.salario = salario;
 	}
 
+	@Override
+	public String toString() {
+		return "Contribuinte [nome=" + nome + ", cpf=" + cpf + ", dataAdmissao=" + dataAdmissao + ", status=" + status
+				+ ", taxaContribuicao=" + taxaContribuicao + ", salario=" + salario + "]";
+	}
+	
+	
+
 }
