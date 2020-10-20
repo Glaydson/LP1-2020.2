@@ -9,6 +9,12 @@ public class ContaPoupanca extends ContaCorrente {
 		this.taxaRendimento = taxaRendimento;
 	}
 
+	public void acumularRendimento() {
+		double rendimento = this.getSaldo() * this.taxaRendimento;
+		this.creditar(rendimento);
+		System.out.println("O rendimento de R$ " + rendimento + " foi creditado na conta " + this.getNumero());
+	}
+
 	public double getTaxaRendimento() {
 		return taxaRendimento;
 	}
