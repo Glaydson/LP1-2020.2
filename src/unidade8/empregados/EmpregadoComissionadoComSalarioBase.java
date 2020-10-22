@@ -25,8 +25,9 @@ public class EmpregadoComissionadoComSalarioBase extends EmpregadoComissionado {
 
 	@Override
 	public String toString() {
-		return String.format("%s%n%s%n%s: %.2f", "Empregado com salário base", 
-				super.toString(), "Salário Base", getSalarioBase());
+	  return String.format("%s%n%s%n%s: %.2f", "Empregado comissionado com salário base", 
+	     	super.toString(), "Salário Base", getSalarioBase());
 	}
+
 
 }

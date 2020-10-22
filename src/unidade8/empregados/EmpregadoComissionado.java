@@ -1,19 +1,13 @@
 package unidade8.empregados;
 
-public class EmpregadoComissionado {
+public class EmpregadoComissionado extends Empregado {
 
-	private final String primeiroNome;
-	private final String ultimoNome;
-	private final String cpf;
 	private double vendasBrutas;
 	private double percentualComissao;
 
 	public EmpregadoComissionado(String primeiroNome, String ultimoNome, String cpf, double vendasBrutas,
 			double percentualComissao) {
-		super();
-		this.primeiroNome = primeiroNome;
-		this.ultimoNome = ultimoNome;
-		this.cpf = cpf;
+		super(primeiroNome, ultimoNome, cpf);
 		this.vendasBrutas = vendasBrutas;
 		this.percentualComissao = percentualComissao;
 	}
@@ -38,25 +32,12 @@ public class EmpregadoComissionado {
 		this.percentualComissao = percentualComissao;
 	}
 
-	public String getPrimeiroNome() {
-		return primeiroNome;
-	}
-
-	public String getUltimoNome() {
-		return ultimoNome;
-	}
-
-	public String getCpf() {
-		return cpf;
-	}
-
 	@Override
 	public String toString() {
-		return String.format("%s: %s %s%n%s: %s%n%s: %.2f%n%s: %.2f%n%s: %.2f", 
-				"Empregado comissionado", getPrimeiroNome(), getUltimoNome(), 
-				"Número do CPF", getCpf(), "Vendas Brutas", getVendasBrutas(),
-				"Percentual de Comissão", getPercentualComissao(), 
-				"Ganhos", ganhos());
+		return String.format("%s: %s%n%s: $%,.2f; %s: %.2f", 
+				 "Empregado Comissionado", super.toString(),
+				 "Vendas Brutas", getVendasBrutas(), 
+				 "Taxa de comissão", getPercentualComissao()); 
 	}
 
 }
