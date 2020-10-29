@@ -1,6 +1,8 @@
 package unidade8.empregados;
 
-public abstract class Empregado {
+import unidade8.interfaces.Pagavel;
+
+public abstract class Empregado implements Pagavel {
 
 	private final String primeiroNome;
 	private final String ultimoNome;

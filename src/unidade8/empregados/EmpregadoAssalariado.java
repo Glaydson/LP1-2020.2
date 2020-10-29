@@ -27,4 +27,11 @@ public class EmpregadoAssalariado extends Empregado {
 		return String.format("Empregado Assalariado: %s%n%s: $%,.2f", super.toString(), "Salário", getSalario());
 	}
 
+	@Override
+	public double getValorPagamento() {
+		return this.salario;
+	}
+
+	
+
 }

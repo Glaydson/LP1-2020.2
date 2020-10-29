@@ -40,4 +40,9 @@ public class EmpregadoHorista extends Empregado {
 		  super.toString(), "Salário por Hora",	getSalarioHora(), "Horas trabalhadas", getHoras());
 	}
 
+	@Override
+	public double getValorPagamento() {
+		return this.ganhos();
+	}
+
 }

@@ -40,4 +40,9 @@ public class EmpregadoComissionado extends Empregado {
 				 "Taxa de comissão", getPercentualComissao()); 
 	}
 
+	@Override
+	public double getValorPagamento() {
+		return this.ganhos();
+	}
+
 }
