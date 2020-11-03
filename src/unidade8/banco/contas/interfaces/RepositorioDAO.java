@@ -1,17 +1,21 @@
 package unidade8.banco.contas.interfaces;
 
-import java.util.ArrayList;
+import java.util.List;
 
-import unidade8.banco.contas.abstrata.ContaAbstrata;
-
-public interface RepositorioDAO<T extends ContaAbstrata> {
+public interface RepositorioDAO<ContaAbstrata> {
 	
-	//private static ArrayList<T> contas = new ArrayList<>();
+	// static ArrayList contas = new ArrayList<>();
 	
-	void salvar(T);
+	// Por padrão, qualquer método de uma interface é
+	// public abstract
 	
-	ArrayList<T> buscarTodos();
+	// É possível definir métodos implementados, usando 
+	// a palavra reservada default
 	
-	void remover(T);
+	void salvar(ContaAbstrata conta);
+	
+	List<ContaAbstrata> buscarTodos();
+	
+	void remover(ContaAbstrata conta);
 
 }
