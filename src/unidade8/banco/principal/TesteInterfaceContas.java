@@ -1,7 +1,5 @@
 package unidade8.banco.principal;
 
-import java.util.List;
-
 import unidade8.banco.contas.abstrata.ContaAbstrata;
 import unidade8.banco.contas.abstrata.ContaCorrente;
 import unidade8.banco.contas.abstrata.ContaEspecial;
