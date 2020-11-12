@@ -1,7 +1,6 @@
 package unidade8.fatura;
 
 import lombok.Data;
-import lombok.Setter;
 import unidade8.interfaces.Pagavel;
 
 @Data
