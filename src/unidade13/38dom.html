@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+
+<head lang="pt-br">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function insereNovoTexto() {
+            var novoItem = document.createElement("hr");
+            var paiDestino = document.getElementsByTagName("body")[0];
+            paiDestino.insertBefore(novoItem, paiDestino.firstChild);
+        }
+    </script>
+</head>
+
+<body onclick="insereNovoTexto()">
+    <h1 id="meuTexto">Por favor clique na página</h1>
+    <div class="row">
+
+    </div>
+    <div class="container-fluid">
+
+    </div>
+</body>
+
+</html>

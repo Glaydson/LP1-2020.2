@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Arrays</title>
+</head>
+
+<body>
+    <script>
+        var estados = [{ nome: 'Ceará', capital: 'Fortaleza' },
+        { nome: 'Pernambuco', capital: 'Recife' },
+        { nome: 'Paraíba', capital: 'João Pessoa' }];
+
+        var capitais = estados.map(function (estado) {
+            return estado.capital;
+        })
+        console.log(capitais);  // ['Fortaleza', 'Recife', 'João Pessoa']
+    </script>
+</body>
+
+</html>

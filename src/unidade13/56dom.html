@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+
+<head lang="pt-br">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <p>Nome: <input type="text" data-ajuda="Seu nome completo"></p>
+    <p>Idade: <input type="text" data-ajuda="Idade em anos"></p>
+    <p id="ajuda"></p>
+
+    <script>
+        var ajuda = document.querySelector("#ajuda");
+        var campos = document.querySelectorAll("input");
+        for (var i = 0; i < campos.length; i++) {
+            campos[i].addEventListener("focus", function (event) {
+                var texto = event.target.getAttribute("data-ajuda");
+                ajuda.textContent = texto;
+            });
+            campos[i].addEventListener("blur", function (event) {
+                ajuda.textContent = "";
+            });
+        }
+    </script>
+
+</body>
+
+</html>

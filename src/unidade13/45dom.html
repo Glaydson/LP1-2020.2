@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+
+<head lang="pt-br">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <button>Um botão que só funciona uma vez</button>
+    <script>
+        var button = document.querySelector("button");
+        function umavez() {
+            console.log("Feito.");
+            button.removeEventListener("click", umavez);
+        }
+        button.addEventListener("click", umavez);
+    </script>
+
+
+</body>
+
+</html>

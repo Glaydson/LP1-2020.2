@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+
+<head lang="pt-br">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <style>
+        body {
+            height: 200px;
+            background: beige;
+        }
+
+        .ponto {
+            height: 8px;
+            width: 8px;
+            border-radius: 4px;
+            /* arredonda os cantos */
+            background: blue;
+            position: absolute;
+        }
+    </style>
+    <script>
+        addEventListener("click", function (event) {
+            var ponto = document.createElement("div");
+            ponto.className = "ponto";
+            ponto.style.left = (event.pageX - 4) + "px";
+            ponto.style.top = (event.pageY - 4) + "px";
+            document.body.appendChild(ponto);
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pessoa</title>
+</head>
+
+<body>
+    <script>
+        var pessoa = {
+            nome: "Francisco",
+            idade: 50,
+            email: undefined,
+            endereço: {
+                logradouro: "Rua Olavo Bilac",
+                numero: 105,
+                bairro: "Aldeota"
+            }
+        };
+        for (propriedade in pessoa) {
+            console.log(propriedade);
+        };
+        console.log("nome" in pessoa);   // true
+        console.log("sobrenome" in pessoa);  // false
+    </script>
+</body>
+
+</html>

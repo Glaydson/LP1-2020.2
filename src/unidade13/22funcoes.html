@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pessoa</title>
+</head>
+
+<body>
+    <script>
+        // Passagem de função como parâmetro
+        var produto = { nome: "Arroz", preço: 2 };
+        var formulaImpostoA = function (preço) {
+            return preço * 0.1;
+        }
+        var formulaImpostoB = function (preço) {
+            return preço * 0.2;
+        }
+        var calcularPreço = function (produto, formulaImposto) {
+            return produto.preço + formulaImposto(produto.preço);
+        }
+        calcularPreço(produto, formulaImpostoA);    // 2.2
+        calcularPreço(produto, formulaImpostoB);    // 2.4
+
+    </script>
+</body>
+
+</html>

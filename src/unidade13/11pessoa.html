@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pessoa</title>
+</head>
+
+<body>
+    <script>
+        var pessoa = {}
+
+        // pessoa.endereco.bairro = "Aldeota";    // Erro!
+        pessoa.endereco = {};
+        pessoa.endereco.bairro = "Aldeota";    // OK
+        pessoa["endereco"]["bairro"] = "Centro";   // OK
+
+        console.log(pessoa);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pessoa</title>
+</head>
+
+<body>
+    <script>
+        var getIdade = function () {
+            return this.idade;
+        }
+        var pessoa = {
+            nome: "Roberto",
+            idade: 20,
+            getIdade: getIdade
+        };
+        getIdade();           // undefined - não há contexto para "this"!
+        pessoa.getIdade();    // 20 - contexto para "this" é "pessoa" !
+    </script>
+</body>
+
+</html>

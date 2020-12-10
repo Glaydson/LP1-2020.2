@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+
+<head lang="pt-br">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <p>Passe o mouse sobre este <strong>parágrafo</strong>.</p>
+    <script>
+        var para = document.querySelector("p");
+        function estaDentro(node, alvo) {
+            for (; node != null; node = node.parentNode)
+                if (node == alvo) return true;
+        }
+        para.addEventListener("mouseover", function (event) {
+            if (!estaDentro(event.relatedTarget, para))
+                para.style.color = "red";
+        });
+        para.addEventListener("mouseout", function (event) {
+            if (!estaDentro(event.relatedTarget, para))
+                para.style.color = "";
+        });
+    </script>
+</body>
+
+</html>

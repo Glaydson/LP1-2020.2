@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <p>Um</p>
+    <p>Dois</p>
+    <p>Três</p>
+
+    <script>
+        var parágrafos = document.body.getElementsByTagName("p");
+        var ptres = document.createElement("P");
+        ptres.innerText = "Quatro";
+        document.body.insertBefore(ptres, parágrafos[0]);
+    </script>
+</body>
+
+</html>

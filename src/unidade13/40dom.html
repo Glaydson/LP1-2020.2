@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+
+<head lang="pt-br">
+    <meta charset="UTF-8">
+    <title>Removendo um nó</title>
+    <script>
+        function delete1() {
+            var parag1 = document.getElementById("primeiroP");
+            parag1.parentNode.removeChild(parag1);
+        }
+        function delete2() {
+            var primeiroP = document.getElementsByTagName("p")[0];
+            primeiroP.parentNode.removeChild(primeiroP);
+        }
+        function delete3() {
+            var pai = document.getElementById("corpo");
+            pai.removeChild(pai.firstChild);
+        }
+    </script>
+</head>
+
+<body id="corpo">
+    <p id="primeiroP">Olá.</p>
+    Como você está?<br>
+    <p id="segundoP">Está um ótimo dia!</p>
+    <button type="button" onclick="delete1()">Exemplo 1</button>
+    <button type="button" onclick="delete2()">Exemplo 2</button>
+    <button type="button" onmousedown="delete3()">Exemplo 3</button>
+    <p>
+        Recarregue a página para resetar o DOM.
+    </p>
+</body>
+
+</html>

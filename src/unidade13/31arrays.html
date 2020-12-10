@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Arrays</title>
+</head>
+
+<body>
+    <script>
+        var estados = [{ nome: 'Ceará', capital: 'Fortaleza' },
+        { nome: 'Pernambuco', capital: 'Recife' },
+        { nome: 'Paraíba', capital: 'João Pessoa' }];
+        // FILTRANDO COM FOREACH
+        var estadoCeará = [];
+        estados.forEach(function (estado) {
+            if (estado.capital === 'Fortaleza') estadoCeará.push(estado);
+        });
+        console.log(estadoCeará); // { nome: 'Ceará', capital: 'Fortaleza' }
+
+        // FILTRANDO COM FILTER
+        estadoCeara = estados.filter(function (estado) {
+            return estado.capital === 'Fortaleza';
+        })
+        console.log(estadoCeara);
+    </script>
+</body>
+
+</html>

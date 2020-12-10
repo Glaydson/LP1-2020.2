@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+
+<head lang="pt-br">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <p>Um parágrafo com um <button>botão</button>.</p>
+    <script>
+        var para = document.querySelector("p");
+        var button = document.querySelector("button");
+        para.addEventListener("mousedown", function () {
+            console.log("Tratador para o parágrafo.");
+        });
+        button.addEventListener("mousedown", function (event) {
+            console.log("Tratador para o botão.");
+            if (event.which == 3)
+                event.stopPropagation();
+        });
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head> 
+    <body onload="checaIdadeUsuario()">
+        <h1>Esta é a minha página para maiores.</h1>
+        <script>
+            function checaIdadeUsuario(){
+                if (idadeUsuario() < 18)
+                    alert("Por favor vá para outra página.");
+            }
+            function idadeUsuario(){
+                var idadeTexto, idade;
+                idadeTexto=prompt("Qual é a sua idade?");
+                idade=parseInt(idadeTexto);
+                return idade;
+            }
+        </script>
+    </body>
+</html>

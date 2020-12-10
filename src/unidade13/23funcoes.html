@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pessoa</title>
+</head>
+
+<body>
+    <script>
+        // Retornando uma função
+        var aloMundo = function () {
+            return function () {
+                return "Alô Mundo";
+            };
+        };
+        console.log(aloMundo)      // function
+        console.log(aloMundo())    // function
+        console.log(aloMundo()())  // "Alô mundo"
+    </script>
+</body>
+
+</html>

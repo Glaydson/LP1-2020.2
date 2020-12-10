@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Arrays</title>
+</head>
+
+<body>
+    <script>
+        var estados = [{ nome: 'Ceará', capital: 'Fortaleza', municipios: 184 },
+        { nome: 'Pernambuco', capital: 'Recife', municipios: 185 },
+        { nome: 'Paraíba', capital: 'João Pessoa', municipios: 223 }];
+        var totalMunicipios = 0;
+        estados.forEach(function (estado) {
+            totalMunicipios += estado.municipios
+        })
+        console.log(totalMunicipios);  // 592
+    </script>
+</body>
+
+</html>

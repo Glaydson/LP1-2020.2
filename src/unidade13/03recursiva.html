@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head> 
+    <body>
+        <script>
+            alert("É a minha " + constroiBi(5) +
+                  "bisavó!");
+
+            function constroiBi( qtde ) {
+                if (qtde > 0)
+                    return "bi " + constroiBi( qtde - 1 );
+                else
+                    return "";
+            }
+        </script>
+    </body>
+</html>

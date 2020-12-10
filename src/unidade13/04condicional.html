@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+    	<meta charset="UTF-8">
+        <title>Fluxo de Controle</title>
+    </head>
+    <body>
+        <script>
+            var numero = Number(prompt("Digite um número:"), "");
+            if (!isNaN(numero)) {
+                if (numero < 10) 
+                    alert("Pequeno");
+                else if (numero < 100)
+                    alert("Médio");
+                else alert("Grande");
+            }
+            else 
+                alert("Ei! Por quê você não me deu um número?");
+        </script>
+    </body>
+</html>
