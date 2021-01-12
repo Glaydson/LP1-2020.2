@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conta Caracteres</title>
+</head>
+<body>
+    <script>
+
+        function contaChar(string, caractere) {
+            var contador = 0;
+            for (var i = 0; i < string.length; i++) {
+                if (string.charAt(i) === caractere) {
+                    contador++;
+                }
+            }
+            console.log("O caractere " + caractere + " foi encontrado " 
+                + contador + " vezes na string " + string )
+        }
+
+        contaChar("O rato roeu a roupa do rei de Roma", "r");
+        contaChar("Unichristus", "a");
+
+    </script>
+</body>
+</html>

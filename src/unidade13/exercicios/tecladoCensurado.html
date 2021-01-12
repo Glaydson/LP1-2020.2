@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text">
+    <script> 
+        var campo = document.querySelector("input");
+        console.log("Q".charCodeAt(0));  // 81
+        console.log("W".charCodeAt(0));  // 87
+        console.log("X".charCodeAt(0));  // 88
+
+        campo.addEventListener("keyup", function(evento) {
+            if (evento.keyCode === 81 || evento.keyCode === 87 || evento.keyCode === 88) {
+                // Obter o valor do campo texto
+                var textoDoCampo = campo.value;
+                textoDoCampo = textoDoCampo.slice(0, textoDoCampo.length - 1)
+                campo.value = textoDoCampo;
+            }
+        })
+
+
+    </script>
+
+</body>
+
+</html>

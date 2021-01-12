@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div id="div1">
+        <p id="p1">Parágrafo 1.</p>
+        <p id="p2">Parágrafo 2.</p>
+    </div>
+    <button onclick="mudar()">Mudar</button>
+    <script>
+        function mudar() {
+            // Mudar o texto do parágrafo 1
+            p1.textContent = "Parágrafo 1 Alterado"
+
+            // Criar um terceiro parágrafo
+            var p3 = document.createElement("p");
+            p3.textContent = "Parágrafo 3"
+            div1.appendChild(p3);
+
+            // Mudar o texto do botão
+            document.getElementsByTagName("button")[0].textContent = "Mudanças Feitas!"
+            
+        }	
+    </script>
+</body>
+
+</html>
